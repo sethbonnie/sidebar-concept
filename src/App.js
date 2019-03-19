@@ -55,7 +55,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      sidebarOpen: false,
+      sidebarOpen: window.innerWidth < 768 ? false : true,
     };
   }
 
